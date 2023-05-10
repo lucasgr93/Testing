@@ -1,0 +1,18 @@
+---
+:source:
+  :path: test
+  :file: test_leds.c
+:successes:
+- :test: test_todos_los_leds_inician_apagados
+  :line: 6
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0015893429990683217

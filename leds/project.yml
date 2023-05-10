@@ -33,6 +33,8 @@
   :test:
     - +:test/**
     - -:test/support
+  :include:
+    - inc/**
   :source:
     - src/**
   :support:
@@ -98,4 +100,5 @@
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
+    - xml_tests_report
 ...
