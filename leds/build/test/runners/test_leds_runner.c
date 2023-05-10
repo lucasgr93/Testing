@@ -11,6 +11,9 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_todos_los_leds_inician_apagados(void);
+extern void test_prender_un_led(void);
+extern void test_prender_y_apagar_un_led(void);
+extern void test_prender_y_apagar_varios_leds(void);
 
 
 /*=======Mock Management=====*/
@@ -26,9 +29,6 @@ static void CMock_Verify(void)
 static void CMock_Destroy(void)
 {
 }
-
-/*=======Setup (stub)=====*/
-void setUp(void) {}
 
 /*=======Teardown (stub)=====*/
 void tearDown(void) {}
@@ -81,7 +81,10 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_leds.c");
-  run_test(test_todos_los_leds_inician_apagados, "test_todos_los_leds_inician_apagados", 6);
+  run_test(test_todos_los_leds_inician_apagados, "test_todos_los_leds_inician_apagados", 13);
+  run_test(test_prender_un_led, "test_prender_un_led", 21);
+  run_test(test_prender_y_apagar_un_led, "test_prender_y_apagar_un_led", 28);
+  run_test(test_prender_y_apagar_varios_leds, "test_prender_y_apagar_varios_leds", 36);
 
   return UnityEnd();
 }
