@@ -97,3 +97,111 @@ void test_prender_y_apagar_varios_leds(void)
    ), (UNITY_UINT)(42), UNITY_DISPLAY_STYLE_HEX16);
 
 }
+
+
+
+
+
+void test_preder_un_led_y_consultar_estado(void)
+
+{
+
+    
+
+   _Bool 
+
+        led_turned_on = 
+
+                        0
+
+                             ;
+
+    leds_turn_on_single(2);
+
+    led_turned_on = leds_is_turned_on(2);
+
+    do {if ((led_turned_on)) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(51)));}} while(0);
+
+}
+
+
+
+
+
+void test_apagar_un_led_y_consultar_estado(void)
+
+{
+
+    
+
+   _Bool 
+
+        led_turned_on = 
+
+                        1
+
+                            ;
+
+    leds_turn_on_single(2);
+
+    leds_turn_off_single(2);
+
+    led_turned_on = leds_is_turned_on(2);
+
+    do {if (!(led_turned_on)) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(61)));}} while(0);
+
+}
+
+
+
+
+
+void test_prender_todos_los_leds_y_consultar_estado(void)
+
+{
+
+    
+
+   _Bool 
+
+        all_leds_turned_on = 
+
+                             0
+
+                                  ;
+
+    leds_turn_on_all();
+
+    all_leds_turned_on = leds_all_turned_on();
+
+    do {if ((all_leds_turned_on)) {} else {UnityFail( ((" Expected TRUE Was FALSE")), (UNITY_UINT)((UNITY_UINT)(70)));}} while(0);
+
+}
+
+
+
+
+
+void test_apagar_todos_los_leds_y_consultar_estado(void)
+
+{
+
+    
+
+   _Bool 
+
+        all_leds_turned_on = 
+
+                             1
+
+                                 ;
+
+    leds_turn_on_all();
+
+    leds_turn_off_all();
+
+    all_leds_turned_on = leds_all_turned_on();
+
+    do {if (!(all_leds_turned_on)) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(80)));}} while(0);
+
+}

@@ -41,3 +41,53 @@ void test_prender_y_apagar_varios_leds(void)
     leds_turn_off_single(7);
     TEST_ASSERT_EQUAL_HEX16(0x0010, puerto_virtual);
 }
+
+//Prendo un led, consulto el estado y tiene que estar prendido
+void test_preder_un_led_y_consultar_estado(void)
+{
+    bool led_turned_on = false;
+    leds_turn_on_single(2);
+    led_turned_on = leds_is_turned_on(2);
+    TEST_ASSERT_TRUE(led_turned_on);
+}
+
+//Apago un led, consulto el estado y tiene que estar apagado
+void test_apagar_un_led_y_consultar_estado(void)
+{
+    bool led_turned_on = true;
+    leds_turn_on_single(2);
+    leds_turn_off_single(2);
+    led_turned_on = leds_is_turned_on(2);
+    TEST_ASSERT_FALSE(led_turned_on);
+}
+
+//Con todos los leds apagados, enciendo todos los leds y verifico que se encienden
+void test_prender_todos_los_leds_y_consultar_estado(void)
+{
+    bool all_leds_turned_on = false;
+    leds_turn_on_all();
+    all_leds_turned_on = leds_all_turned_on();
+    TEST_ASSERT_TRUE(all_leds_turned_on);
+}
+
+//Con todos los leds encendidos, apago todos los leds y verifico que se apagan
+void test_apagar_todos_los_leds_y_consultar_estado(void)
+{
+    bool all_leds_turned_on = true;
+    leds_turn_on_all();
+    leds_turn_off_all();
+    all_leds_turned_on = leds_all_turned_on();
+    TEST_ASSERT_FALSE(all_leds_turned_on);
+}
+
+//Revisar los valores límites de los argumentos
+void test_verificar_valores_limites(void)
+{
+    
+}
+
+//Revisar qué pasa con valores erroneos en los argumentos
+void test_verificar_comportamiento_argumentos_erroneos(void)
+{
+
+}

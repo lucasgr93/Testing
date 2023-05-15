@@ -19,12 +19,28 @@
   :line: 36
   :message: ''
   :unity_test_time: 0
+- :test: test_preder_un_led_y_consultar_estado
+  :line: 46
+  :message: ''
+  :unity_test_time: 0
+- :test: test_apagar_un_led_y_consultar_estado
+  :line: 55
+  :message: ''
+  :unity_test_time: 0
+- :test: test_prender_todos_los_leds_y_consultar_estado
+  :line: 65
+  :message: ''
+  :unity_test_time: 0
+- :test: test_apagar_todos_los_leds_y_consultar_estado
+  :line: 74
+  :message: ''
+  :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 8
+  :passed: 8
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0022878880008647684
+:time: 0.0015595990007568616
