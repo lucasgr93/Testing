@@ -205,3 +205,27 @@ void test_apagar_todos_los_leds_y_consultar_estado(void)
     do {if (!(all_leds_turned_on)) {} else {UnityFail( ((" Expected FALSE Was TRUE")), (UNITY_UINT)((UNITY_UINT)(80)));}} while(0);
 
 }
+
+
+
+
+
+void test_verificar_valores_limites(void)
+
+{
+
+
+
+}
+
+
+
+
+
+void test_verificar_comportamiento_argumentos_erroneos(void)
+
+{
+
+
+
+}

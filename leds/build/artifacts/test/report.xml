@@ -26,10 +26,16 @@
 		<Test id="8">
 			<Name>test/test_leds.c::test_apagar_todos_los_leds_y_consultar_estado</Name>
 		</Test>
+		<Test id="9">
+			<Name>test/test_leds.c::test_verificar_valores_limites</Name>
+		</Test>
+		<Test id="10">
+			<Name>test/test_leds.c::test_verificar_comportamiento_argumentos_erroneos</Name>
+		</Test>
 	</SuccessfulTests>
 	<IgnoredTests/>
 	<Statistics>
-		<Tests>8</Tests>
+		<Tests>10</Tests>
 		<Ignores>0</Ignores>
 		<FailuresTotal>0</FailuresTotal>
 		<Errors>0</Errors>

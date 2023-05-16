@@ -18,6 +18,8 @@ extern void test_preder_un_led_y_consultar_estado(void);
 extern void test_apagar_un_led_y_consultar_estado(void);
 extern void test_prender_todos_los_leds_y_consultar_estado(void);
 extern void test_apagar_todos_los_leds_y_consultar_estado(void);
+extern void test_verificar_valores_limites(void);
+extern void test_verificar_comportamiento_argumentos_erroneos(void);
 
 
 /*=======Mock Management=====*/
@@ -93,6 +95,8 @@ int main(void)
   run_test(test_apagar_un_led_y_consultar_estado, "test_apagar_un_led_y_consultar_estado", 55);
   run_test(test_prender_todos_los_leds_y_consultar_estado, "test_prender_todos_los_leds_y_consultar_estado", 65);
   run_test(test_apagar_todos_los_leds_y_consultar_estado, "test_apagar_todos_los_leds_y_consultar_estado", 74);
+  run_test(test_verificar_valores_limites, "test_verificar_valores_limites", 84);
+  run_test(test_verificar_comportamiento_argumentos_erroneos, "test_verificar_comportamiento_argumentos_erroneos", 90);
 
   return UnityEnd();
 }

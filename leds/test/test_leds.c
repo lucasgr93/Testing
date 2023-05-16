@@ -79,15 +79,3 @@ void test_apagar_todos_los_leds_y_consultar_estado(void)
     all_leds_turned_on = leds_all_turned_on();
     TEST_ASSERT_FALSE(all_leds_turned_on);
 }
-
-//Revisar los valores límites de los argumentos
-void test_verificar_valores_limites(void)
-{
-    
-}
-
-//Revisar qué pasa con valores erroneos en los argumentos
-void test_verificar_comportamiento_argumentos_erroneos(void)
-{
-
-}

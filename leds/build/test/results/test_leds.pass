@@ -35,12 +35,20 @@
   :line: 74
   :message: ''
   :unity_test_time: 0
+- :test: test_verificar_valores_limites
+  :line: 84
+  :message: ''
+  :unity_test_time: 0
+- :test: test_verificar_comportamiento_argumentos_erroneos
+  :line: 90
+  :message: ''
+  :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 8
-  :passed: 8
+  :total: 10
+  :passed: 10
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0015595990007568616
+:time: 0.001728525006910786
