@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<TestRun>
+	<FailedTests/>
+	<SuccessfulTests>
+		<Test id="1">
+			<Name>test/test_node.c::test_create_one_node_with_correct_address_and_verify_that_it_is_not_null</Name>
+		</Test>
+		<Test id="2">
+			<Name>test/test_node.c::test_create_one_node_with_wrong_address</Name>
+		</Test>
+		<Test id="3">
+			<Name>test/test_node.c::test_delete_one_node_and_verify_that_the_memory_has_been_released</Name>
+		</Test>
+		<Test id="4">
+			<Name>test/test_node.c::test_create_one_node_and_get_its_address</Name>
+		</Test>
+		<Test id="5">
+			<Name>test/test_node.c::test_change_node_address</Name>
+		</Test>
+		<Test id="6">
+			<Name>test/test_node.c::test_get_node_parameters_count</Name>
+		</Test>
+		<Test id="7">
+			<Name>test/test_node.c::test_get_node_parameters_list</Name>
+		</Test>
+	</SuccessfulTests>
+	<IgnoredTests/>
+	<Statistics>
+		<Tests>7</Tests>
+		<Ignores>0</Ignores>
+		<FailuresTotal>0</FailuresTotal>
+		<Errors>0</Errors>
+		<Failures>0</Failures>
+	</Statistics>
+</TestRun>
